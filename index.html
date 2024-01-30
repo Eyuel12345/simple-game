@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.jpg">
+</head>
+<body>
+    <div id="container">
+        <h1>Password Generator</h1>
+        <hr>
+        <label>Length of password: </label>
+        <input type="number" value="0" min="1" id="length"><br>
+        <label>includeupper: </label>
+        <label style="padding-left: 20px;">true:</label><input type="radio" id="uppertrue" name="upper">
+        <label style="padding-left: 20px;">false:</label><input type="radio" id="upperfalse" name="upper"><br>
+        <label>includelower: </label>
+        <label style="padding-left: 20px;">true:</label><input type="radio" id="lowertrue" name="lower">
+        <label style="padding-left: 20px;">false:</label><input type="radio" id="lowerfalse" name="lower"><br>
+        <label>includenums: </label>
+        <label style="padding-left: 20px;">true:</label><input type="radio" id="numstrue" name="nums">
+        <label style="padding-left: 20px;">false:</label><input type="radio" id="numsfalse" name="nums"><br>
+        <label>includesymbols: </label>
+        <label style="padding-left: 20px;">true:</label><input type="radio" id="symstrue" name="syms">
+        <label style="padding-left: 20px;">false:</label><input type="radio" id="symsfalse" name="syms"><br>
+        <button id="button">Generate</button><br>
+        <p id="result"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
